@@ -13,7 +13,6 @@ case "$answer" in
     [Yy][Ee][Ss]|[Yy])
     
         npm install cdktf-cli@latest
-        exit 0
         ;;
     [Nn][Oo]|[Nn])
         echo "Installation aborted."
