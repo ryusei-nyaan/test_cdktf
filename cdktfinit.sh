@@ -34,7 +34,7 @@ local=$4
 if [ -z ${Subcommand} ];
 then
 echo "Subcommand is not be found."
-node node_modules/.bin/cdktf help
+npx cdktf help
 exit 1
 fi 
 
@@ -56,4 +56,4 @@ cd infra
 #example --template=typescript --providers=aws --local
 echo "Language is ${lang}. \"providers\" is ${provider}. ${local} is selected. "
 echo "If errors happen, please set second argument \"--help\"" 
-node ../node_modules/.bin/cdktf ${Subcommand} --template=${lang} --providers=${provider} --${local}
+npx cdktf ${Subcommand} --template=${lang} --providers=${provider} --${local}
